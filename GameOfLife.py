@@ -28,7 +28,7 @@ def rule_setup():
 	"""
 	Specify whether a cell should be full after an iteration based on its
 	current contents and number of adjacent full cells.
-	A cell will empty without a rule to keep it alive
+	A cell will empty without a rule to keep it alive.
 
 	rules[is_full(True:1|False:0)][adjacent_full_cells] = 1
 	"""
@@ -82,7 +82,6 @@ def calculate_adjacency_board ():
 rule_setup()
 board_setup()
 print_board()
-
 
 while(True):
 	#application loop
