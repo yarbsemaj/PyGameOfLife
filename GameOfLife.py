@@ -86,14 +86,14 @@ def calculate_adjacency_board ():
 	global adjacency_board
 	for row in range(board_height):
 		for column in range(board_width):
-			adjacency_board[row][column] = get_cell_content(row - 1, column - 1) + \
-										   get_cell_content(row, column - 1) + \
-										   get_cell_content(row + 1, column - 1) + \
-										   get_cell_content(row - 1, column) + \
-										   get_cell_content(row + 1, column) + \
-										   get_cell_content(row - 1, column + 1) + \
-										   get_cell_content(row, column + 1) + \
-										   get_cell_content(row + 1, column + 1)
+			adjacency_board[row][column] = 	get_cell_content(row - 1, column - 1) + \
+							get_cell_content(row, column - 1) + \
+							get_cell_content(row + 1, column - 1) + \
+							get_cell_content(row - 1, column) + \
+							get_cell_content(row + 1, column) + \
+							get_cell_content(row - 1, column + 1) + \
+							get_cell_content(row, column + 1) + \
+							get_cell_content(row + 1, column + 1)
 
 
 rule_setup()
